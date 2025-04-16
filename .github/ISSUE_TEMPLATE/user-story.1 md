@@ -1,0 +1,11 @@
+### ✅ User Stories
+- Als Kunde möchte ich mich registrieren und einloggen.
+- Als Barber möchte ich mich registrieren und einloggen.
+
+### 🔧 Tasks
+- Backend Setup
+- Auth-API: Login/Signup mit JWT
+- Angular Projekt Setup (Web App)
+- Flutter Projekt Setup (Mobile App)
+- Datenbank-Modelle: User, Barber, Termin
+- CI/CD: GitLab Pipelines oder GitHub Actions
