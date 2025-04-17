@@ -1,0 +1,35 @@
+---
+
+# 📁 .github/ISSUE_TEMPLATE/feature-request.yml
+name: "🌟 Feature Request"
+description: "Schlage eine neue Funktion oder Verbesserung vor."
+title: "[Feature] <Kurze Beschreibung>"
+labels:
+  - enhancement
+body:
+  - type: textarea
+    id: feature
+    attributes:
+      label: "✨ Beschreibung des Features"
+      description: "Was soll umgesetzt werden und warum ist es hilfreich?"
+      placeholder: "Ein Dark Mode für bessere Lesbarkeit am Abend."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: "📌 Priorität"
+      options:
+        - "🌟 Hoch"
+        - "⭐ Mittel"
+        - "🔹 Niedrig"
+      default: 1
+
+  - type: textarea
+    id: context
+    attributes:
+      label: "🔍 Kontext & Referenzen"
+      placeholder: "Beispiel-App, Link zu ähnlichem Feature, Screenshot..."
+    validations:
+      required: false
