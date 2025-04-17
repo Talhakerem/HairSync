@@ -1,0 +1,55 @@
+---
+
+# 📁 .github/ISSUE_TEMPLATE/bug-report.yml
+name: "🐞 Bug Report"
+description: "Melde einen Fehler oder ein unerwartetes Verhalten."
+title: "[BUG] <Kurze Fehlerbeschreibung>"
+labels:
+  - bug
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: "📝 Fehlerbeschreibung"
+      description: "Was ist passiert? Was hättest du erwartet?"
+      placeholder: "Beim Klick auf 'Buchen' erscheint ein Fehler..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: "👣 Schritte zur Reproduktion"
+      description: "Wie kann man den Fehler nachstellen?"
+      placeholder: "1. App öffnen
+2. Auf 'Buchen' klicken
+3. ..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: "✅ Erwartetes Verhalten"
+      placeholder: "Der Termin sollte gespeichert werden und eine Bestätigung erscheinen."
+    validations:
+      required: false
+
+  - type: input
+    id: device
+    attributes:
+      label: "📱 Gerät / Browser"
+      placeholder: "z. B. iPhone 13, Chrome 123"
+    validations:
+      required: false
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: "🚨 Schweregrad"
+      options:
+        - "🟥 Kritisch (blockiert Nutzung)"
+        - "🟧 Hoch (stört wichtige Funktion)"
+        - "🟨 Mittel (stört, aber workaround möglich)"
+        - "🟩 Gering (nur kosmetisch)"
+      default: 2
