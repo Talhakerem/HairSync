@@ -1,0 +1,79 @@
+# 📁 .github/ISSUE_TEMPLATE/user-story-template.yml
+name: "User Story"
+description: "Erstelle eine neue User Story im Scrum-Stil."
+title: "[US] <Kurztitel der Story>"
+labels:
+  - user-story
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Bitte fülle die folgende User Story Vorlage aus.
+
+  - type: input
+    id: role
+    attributes:
+      label: "🎭 Als (Rolle)"
+      description: "Welche Rolle hat der Benutzer dieser Story?"
+      placeholder: "z. B. Kunde, Friseur, Admin"
+    validations:
+      required: true
+
+  - type: textarea
+    id: goal
+    attributes:
+      label: "🎯 möchte ich (Ziel)"
+      description: "Was möchte der Benutzer erreichen?"
+      placeholder: "z. B. Termine online buchen"
+    validations:
+      required: true
+
+  - type: textarea
+    id: benefit
+    attributes:
+      label: "💡 damit (Nutzen)"
+      description: "Warum möchte der Benutzer das erreichen?"
+      placeholder: "z. B. um meine Zeit besser zu planen"
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: criteria
+    attributes:
+      label: "✅ Akzeptanzkriterien"
+      options:
+        - label: "[ ] Feature ist vollständig implementiert"
+        - label: "[ ] Funktioniert auf mobilen & Web-Plattformen"
+        - label: "[ ] Wurde getestet (Unit/Integration/UI)"
+
+  - type: dropdown
+    id: sprint
+    attributes:
+      label: "🏁 Sprint / Iteration"
+      options:
+        - "Sprint 1"
+        - "Sprint 2"
+        - "Sprint 3"
+        - "Sprint 4"
+        - "Sprint 5"
+      default: 0
+    validations:
+      required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: "🛠 Technische Hinweise"
+      description: "Optional: Hinweise zu Technologien, Frameworks oder Services"
+      placeholder: "z. B. Firebase Auth, PostgreSQL, REST API, etc."
+    validations:
+      required: false
+
+  - type: textarea
+    id: tests
+    attributes:
+      label: "🧪 Testszenarien"
+      description: "Wie kann diese User Story überprüft werden?"
+      placeholder: "z. B. Registrierung mit valider & invalider E-Mail"
+    validations:
+      required: false
