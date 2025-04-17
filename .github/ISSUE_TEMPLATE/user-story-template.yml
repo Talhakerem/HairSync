@@ -77,3 +77,95 @@ body:
       placeholder: "z. B. Registrierung mit valider & invalider E-Mail"
     validations:
       required: false
+
+---
+
+# 📁 .github/ISSUE_TEMPLATE/bug-report.yml
+name: "🐞 Bug Report"
+description: "Melde einen Fehler oder ein unerwartetes Verhalten."
+title: "[BUG] <Kurze Fehlerbeschreibung>"
+labels:
+  - bug
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: "📝 Fehlerbeschreibung"
+      description: "Was ist passiert? Was hättest du erwartet?"
+      placeholder: "Beim Klick auf 'Buchen' erscheint ein Fehler..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: "👣 Schritte zur Reproduktion"
+      description: "Wie kann man den Fehler nachstellen?"
+      placeholder: "1. App öffnen
+2. Auf 'Buchen' klicken
+3. ..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: "✅ Erwartetes Verhalten"
+      placeholder: "Der Termin sollte gespeichert werden und eine Bestätigung erscheinen."
+    validations:
+      required: false
+
+  - type: input
+    id: device
+    attributes:
+      label: "📱 Gerät / Browser"
+      placeholder: "z. B. iPhone 13, Chrome 123"
+    validations:
+      required: false
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: "🚨 Schweregrad"
+      options:
+        - "🟥 Kritisch (blockiert Nutzung)"
+        - "🟧 Hoch (stört wichtige Funktion)"
+        - "🟨 Mittel (stört, aber workaround möglich)"
+        - "🟩 Gering (nur kosmetisch)"
+      default: 2
+
+---
+
+# 📁 .github/ISSUE_TEMPLATE/feature-request.yml
+name: "🌟 Feature Request"
+description: "Schlage eine neue Funktion oder Verbesserung vor."
+title: "[Feature] <Kurze Beschreibung>"
+labels:
+  - enhancement
+body:
+  - type: textarea
+    id: feature
+    attributes:
+      label: "✨ Beschreibung des Features"
+      description: "Was soll umgesetzt werden und warum ist es hilfreich?"
+      placeholder: "Ein Dark Mode für bessere Lesbarkeit am Abend."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: "📌 Priorität"
+      options:
+        - "🌟 Hoch"
+        - "⭐ Mittel"
+        - "🔹 Niedrig"
+      default: 1
+
+  - type: textarea
+    id: context
+    attributes:
+      label: "🔍 Kontext & Referenzen"
+      placeholder: "Beispiel-App, Link zu ähnlichem Feature, Screenshot..."
+    validations:
+      required: false
