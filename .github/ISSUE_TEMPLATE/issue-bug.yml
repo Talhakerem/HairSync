@@ -1,7 +1,6 @@
 ---
-
 # 📁 .github/ISSUE_TEMPLATE/bug-report.yml
-name: "🐞 Bug Report"
+name: "🐞 Issue Bug"
 description: "Melde einen Fehler oder ein unerwartetes Verhalten."
 title: "[BUG] <Kurze Fehlerbeschreibung>"
 labels:
