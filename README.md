@@ -10,8 +10,8 @@ Ein Full-Stack-Projekt zur Verwaltung von Friseurterminen – verfügbar als Web
 - Mobile App mit React Native für Android/iOS
 
 ## 🛠️ Technologien
-- Frontend: React
-- Backend: React Native
+- Frontend: React Native
+- Backend: NodeJS
 - Datenbank: PostgreSQL
 - CI/CD: GitLab, GitHub Actions
 
