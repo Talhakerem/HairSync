@@ -31,7 +31,7 @@ Ein Full-Stack-Projekt zur Verwaltung von Friseurterminen – verfügbar als Web
 ## 🧑‍💻 Teamrollen
 - Dev 1: Backend/API
 - Dev 2: Web-UI
-- Dev 3: Flutter App
+- Dev 3: React Native App
 - Dev 4: QA/DB
 
 ---
