@@ -5,7 +5,7 @@ Ein Full-Stack-Projekt zur Verwaltung von Friseurterminen – verfügbar als Web
 ## 📱 Features
 - Registrierung & Login für Kunden und Barber
 - Terminbuchung und Kalenderansicht
-- Benachrichtigung per E-Mail/SMS
+- Push Benachrichtigung
 - Admin Dashboard zur Auswertung
 - Mobile App mit React Native für Android/iOS
 
